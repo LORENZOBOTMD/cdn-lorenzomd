@@ -2,7 +2,7 @@ const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
-async function downloadImage(url, folder = './images') {
+async function downloadImage(url, folder = './image') {
   const token = url.split('/resource/')[1];
   if (!token) return;
 
